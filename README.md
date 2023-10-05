@@ -8,5 +8,5 @@
 
 ## What it does
 A Local Atm-System that dont use database
-Able to perform CRUD on user account
+Able to perform CRUD on user account      
 function such as register,login,deposit,withdraw,change info,transfer balance to another account
