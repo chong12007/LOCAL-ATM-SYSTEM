@@ -10,15 +10,17 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
+            try{
             System.out.println("==============ATM SYSTEM===============");
             System.out.println("1.Account Login");
             System.out.println("2.Account Register");
             System.out.println("0.Exit");
             System.out.println();
             System.out.print("Enter Your Selection : ");
-            int command = sc.nextInt();
+            int command = Integer.parseInt(sc.next());
 
-            switch (command) {
+
+                switch (command) {
                 case 0:
                     System.out.println("Thank you and bye bye...");
                     return;
@@ -31,6 +33,10 @@ public class Main {
                 default:
                     System.out.println("Invalid selection");
             }//switch
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid selection");
+            }
+
         }//while
 
     }//main
